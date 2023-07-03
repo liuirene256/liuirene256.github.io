@@ -3,16 +3,65 @@ body {
     font-family: Tahoma, "Trebuchet MS", sans-serif;
 }
 
+nav {
+    background-color: #032e01;
+    padding: 20px;
+    border: 0px;
+}
+
+
+a {
+    transition: 0.4s;
+}
+a:hover {
+    color: #A4FAA0;
+}
+
+.navlink {
+    padding: 20px;
+    color: white;
+    text-shadow: black;
+    cursor: pointer;
+    transition:0.4s;
+}
+.navlink:hover {
+    animation-name: shake1;
+    animation-duration: 0.4s;
+
+}
+@keyframes shake1{
+    0% {
+        transform: rotate(0deg) translate(0px);
+    }
+    25% {
+        transform: rotate(-10deg) translate(-20px);
+    }
+    50% {
+        transform: rotate(0deg) translate(0px);
+    }
+    75% {
+        transform: rotate(10deg) translate(20px);
+    }
+    100% {
+        transform: rotate(0deg) translate(0px);
+    }
+
+}
 .sideCol {
     float: left;
     width: 40%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 25% 25%;
 }
 
 .middleCol {
     float: left;
     width: 20%;
+    height: 60vh;
     background-color: black;
     letter-spacing: 2px;
-    text-align: center;
     color: white;
+    object-fit: cover;
+    object-position: 50% 30%;
 }
