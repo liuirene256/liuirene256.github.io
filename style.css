@@ -1,4 +1,18 @@
 body {
     background-color: beige;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
 }
 
+.sideCol {
+    float: left;
+    width: 40%;
+}
+
+.middleCol {
+    float: left;
+    width: 20%;
+    background-color: black;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+}
