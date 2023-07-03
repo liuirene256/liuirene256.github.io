@@ -1,28 +1,82 @@
 <!DOCTYPE html>
+
 <html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232923045-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+<head>
+	<title>Irene Liu</title>
+	<link rel="stylesheet" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="menubar.js"></script>
+</head>
+<body>
+	<header class="navi" id="navbar">
+		<h1 id="homelink"><a href="index.html">Irene Liu</a></h1>
+		<h1 id="plaintitle">Irene Liu</h1>
+		<a href="javascript:void(0);" class="menu" onclick="showNavi()">
+			<img src="img/icons/menu.svg" />
+		</a>
+		<nav>
 
-		  gtag('config', 'UA-232923045-1');
-		  
-		  gtag('event', 'download', {
-			  'event_category': 'scrapes',
-			  'event_label': 'downloaded'
-			});
-		</script>
+			<a href="https://liuirene256.github.io/" class="page">Home</a>
+			<a href="https://liuirene256.github.io/experience" class="page">Experience</a>
+			<a href="https://liuirene256.github.io/education" class="page">Education</a>
+			<a href="https://liuirene256.github.io/projects" class="page">Projects</a>
+		</nav>
+	</header>
 
-	</head>
-	<body>
-		<h1> pictures </h1>
-		<a href = https://drive.google.com/drive/u/1/folders/1R8Mq4TmklfWl0luuzrveiyV3MWha-pP_ onClick="gtag('download', 'scrapes', 'downloaded');"> link </a>
-		<img src="irene1.JPG" alt="Irene1" onClick="gtag('download', 'scrapes', 'downloaded');">
-		<img src="irene2.JPG" alt="Irene2">
-		<img src="irene3.JPG" alt="Irene3">
-	</body>
-	
+	<div class="big left content">
+		<img src="img/daniel.jpg" />
+		<h1 class="mainheader">Irene Liu</h1>
+		<p>
+			Hi! My name is Irene and I am a freshman at Carnegie Mellon University
+			School of Computer Science. I am interested in software engineering,
+			machine learning, and computational finance. Most of my experience 
+			in computer science is with data analysis and machine learning for
+			medical diagnosis, both performed at Northwestern University's 
+			Feinberg School of Medicine.
+		</p>
+		<p>
+			In my free time, I enjoy running, golf, and reading. I also love 
+			teaching computer science to other passionate children and have 
+			served as the founder and a tutor of my nonprofit Python and AI 
+			classes for over 3 years.
+		</p>
+	</div>
+
+	<div class="content" id="skills">
+		<p>
+			Through my various <a href="projects.html">projects</a> and
+			<a href="career.html">work experiences</a>, I have experience
+			working with the following programming languages and technologies:
+			<ul id="skills">
+				<li>C</li>
+				<li>C++</li>
+				<li>C#</li>
+				<li>Java</li>
+				<li>Python</li>
+				<li>SQL</li>
+				<li>JavaScript</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>MATLAB</li>
+			</ul>
+		</p>
+	</div>
+
+	<footer>
+		<p>
+			<a href="mailto:liuirene2560@gmail.com">
+				<img src="img/icons/mail.svg" title="Email" alt="Email" class="icon" />
+			</a>
+			<a href="https://www.linkedin.com/in/irene-liu-948b97246/">
+				<img src="img/icons/linkedin.svg" title="LinkedIn" alt="LinkedIn" class="icon" />
+			</a>
+			<a href="https://github.com/danielzkng">
+				<img src="img/icons/github.svg" title="GitHub" alt="GitHub" class="icon" />
+			</a>
+			<a href="Irene Liu Resume.pdf">
+				<img src="img/icons/resume.svg" title="Resume" alt="Resume" class="icon" />
+			</a>
+		</p>
+	</footer>
+</body>
 </html>
