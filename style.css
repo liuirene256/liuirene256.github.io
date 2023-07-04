@@ -10,6 +10,11 @@ a {
 a:hover {
     color: #A4FAA0;
 }
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 
 /* 3 columns in a row*/
 #row1 {
