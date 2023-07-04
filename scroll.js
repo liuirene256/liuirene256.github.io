@@ -1,3 +1,5 @@
+window.onscroll = function () { stickyNav() };
+window.addEventListener("scroll", reveal);
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
 
@@ -14,4 +16,13 @@ function reveal() {
     }
 }
 
-window.addEventListener("scroll", reveal);
+var navbar = document.getElementById("navbar");
+var pos = navbar.offsetTop;
+
+function stickyNav() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
