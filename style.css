@@ -21,8 +21,12 @@ ul {
     list-style: none;
     padding-left: 0;
 }
-h1 {
+h1,h2,h3,h4 {
     font-family: 'Abril Fatface';
+    margin:0;
+}
+h3, h4 {
+    color: var(--forestG);
 }
 p {
     font-size: 1rem;
@@ -33,15 +37,37 @@ p {
 .big {
     font-size: 2.5vw;
 }
-
-#section1 {
+.title {
+    font-size: 4.5vw; 
+    text-align: center; 
+    margin: 0; 
+    letter-spacing: 0.3vw;
+}
+div.left, div.right {
+    display:block;
+}
+div.right h2, div.right h3 {
+    text-align:right;
+}
+div.left img{
+    float:left;
+    width: 25%;
+    margin-right: 5%;
+}
+div.right img{
+    float:right;
+    width: 25%;
+    margin-left: 5%;
+}
+.section1 {
     height: 100vh;
     padding: 0px 20% 0px 20%;
+    border-bottom: 2px solid black;
 }
-#section2 {
+.section2 {
     padding: 5vh 20% 0px 20%;
 }
-#section3 {
+.section3 {
     display: grid;
     align-items: center;
     grid-template-columns: auto auto auto auto;
@@ -62,7 +88,7 @@ p {
 
 
 /* down arrow */
-#section1 a span {
+.section1 a span {
     /* put at middle bottom of page */
     position: absolute;
     bottom: 10vh;
@@ -84,7 +110,7 @@ p {
     animation: sdb01 2s infinite;
     box-sizing: border-box;
 }
-#section1 a span:hover {
+.section1 a span:hover {
     border-left: 3px solid var(--sageG);
     border-bottom: 3px solid var(--sageG);
     -webkit-transform: rotate(-45deg);
@@ -114,13 +140,13 @@ p {
 }
 
 /* pic + intro animation */
-#frontpage {
+.frontpage {
     display: grid;
     align-items: center;
     grid-template-columns: auto auto auto auto auto;
-    height: 80vh;
+    height: 60vh;
 }
-#irene1 { 
+.frontpage img { 
     /* crops image */
     padding: 1vw;
     width:25vw;
@@ -443,7 +469,7 @@ p {
 }
 
 @media only screen and (max-width: 1000px) {
-    #section3 {
+    .section3 {
         padding: 0px 20% 0px 20%;
     }
 }
@@ -455,11 +481,11 @@ p {
     section {
         padding: 0px 10% 0px 10%;
     }
-    #section3 {
+    .section3 {
         grid-template-columns: auto;
         padding: 0px 30% 0px 30%;
     }
-    #irene1 {
+    .irene1 {
         height: 40vh;
         width: auto;
     }
