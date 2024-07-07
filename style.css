@@ -1,14 +1,15 @@
 /* fundamentals */
 :root {
     --forestG: #3f5a36;
-    --darkGold: #d1a228;
-    --gold: #f2c562;
-    --sageG: #9ac791;
-    --beige: #ede3df;
+    --darkG: #99a98f;
+    --sageG: #dbead2;
+    --beige: #fffbf2;
+    --darkB: #f2ecdc;
 }
 body {
     letter-spacing: 0.5px;
     padding-bottom: 10vh;
+    font-family: roboto;
 }
 a {
     color: var(--forestG);
@@ -18,8 +19,14 @@ a:hover {
     color: var(--sageG);
 }
 ul {
-    list-style: none;
+    /*list-style: none;*/
     padding-left: 0;
+    font-family: roboto;
+    line-height: 1.5rem;
+}
+ul li { 
+    padding: 5px 0px; 
+    list-style-position: inside;
 }
 h1,h2,h3,h4 {
     font-family: 'Abril Fatface';
@@ -70,19 +77,20 @@ div.right img{
 .section3 {
     display: grid;
     align-items: center;
+    padding: 5vh 30% 0px 35%;
     grid-template-columns: auto auto auto auto;
-    padding: 0px 35% 0px 35%;
 }
 .icon {
-    padding: 0;
+    padding-left: 0.25vw;
+    padding-right: 0.25vw;
     margin: 0;
 }
 .icon img {
-    height: 12vh;
+    height: 7vh;
     transition: 0.2s ease-in;
 }
 .icon img:hover {
-    background-color:var(--sageG);
+    /*background-color:var(--sageG);*/
     transform:scale(1.25);
 }
 
@@ -273,6 +281,33 @@ div.right img{
 .animated:focus {
     cursor: pointer;
     z-index: 9999;
+}
+.collapsible {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+}
+.collapsible.active, .collapsible:hover {
+    color: var(--darkG)
+}
+.bar {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--forestG);
+}
+.bar.active, .bar:hover {
+    color: var(--forestG);
+    background-color: lightgrey;
+}
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 .middle {
     margin: 0 auto;
