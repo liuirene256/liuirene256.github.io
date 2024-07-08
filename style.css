@@ -87,9 +87,11 @@ div.right img{
 }
 .icon img {
     height: 7vh;
+}
+.icon img, .clickPic img {
     transition: 0.2s ease-in;
 }
-.icon img:hover {
+.icon img:hover, .clickPic img:hover {
     /*background-color:var(--sageG);*/
     transform:scale(1.25);
 }
@@ -152,7 +154,6 @@ div.right img{
     display: grid;
     align-items: center;
     grid-template-columns: auto auto auto auto auto;
-    height: 60vh;
 }
 .frontpage img { 
     /* crops image */
